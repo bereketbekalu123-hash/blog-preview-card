@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "figtree";
+  font-family: "figtree",sans-serif;
   src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
   font-weight: 300 900;
 }
@@ -18,7 +18,7 @@
 }
 /* common  */
 body{
-  font-family:"figtree",verdana;
+  font-family:"figtree",san-serif;
   max-width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -110,12 +110,13 @@ font-weight: 800;
   width:2.2rem;
 }
 /* media  */
-@media (prefers-reduced-motion:reduce){
+@media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms;
+    animation-duration: 0.01ms;
+    animation-iteration-count:1;
   }
 }
 
